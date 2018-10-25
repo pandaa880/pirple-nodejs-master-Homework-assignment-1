@@ -74,7 +74,7 @@ handlers.hello = (data, callback) => {
 
 // not found handler
 handlers.notFound = (data, callback) => {
-  callback(404);
+  callback(404, {message: 'Sorry, requested route doesn\'t exist'});
 };
 
 // router
